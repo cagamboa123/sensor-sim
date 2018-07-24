@@ -10,7 +10,7 @@ def publish_messages(project, topic_name):
     # [START pubsub_publish]
     publisher = pubsub_v1.PublisherClient()
     topic_path = publisher.topic_path(project, topic_name)
-    f = open("sensordata.txt","r")
+    f = open("sensorData.txt","r")
 
     #for n in range(1, 10):
     while True:
