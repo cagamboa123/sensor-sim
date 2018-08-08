@@ -7,3 +7,7 @@ Contains </br>
 Copy these files to your computer. </br>
 In GCP console, upload using Cloud shell. </br>
 
+There is an auth_certificate that is recognized by Cloud IoT Core. 
+
+
+
