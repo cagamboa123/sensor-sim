@@ -29,11 +29,11 @@ def publish_messages(project, topic_name):
     # [END pubsub_publish]
 
 ap=argparse.ArgumentParser()
-ap.add_argument("-p","--project", "-t","--topic_name", required=True)
+ap.add_argument("-p","--project", required=True)
+ap.add_argument("-t","--topic_name", required=True)
 args=vars(ap.parse_args())
 
-publish_messages("virtualdevice-210003","virtualdata")
-#publish_messages(args["project","topic_name"])
+publish_messages(args["project"], args["topic_name"])
 
 
 
